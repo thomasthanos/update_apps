@@ -14,7 +14,6 @@ echo.
 echo  Kanei Update oles tis efarmoges!
 echo  _________________________________
 echo.
-pause
 
 @echo off
 reg add "HKEY_CURRENT_USER\Console" /v "FaceName" /t REG_SZ /d "Cascadia Mono" /f
