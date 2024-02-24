@@ -1,12 +1,14 @@
 echo off
 echo. 
 
+echo ACTIVATE WINDOWS
+color a
 slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-pause
+timeout /t 2 >nul
 slmgr /skms kms9.MSGuides.com
-pause
+timeout /t 2 >nul
 slmgr /ato
-pause
+timeout /t 2 >nul
 echo.
 echo.
 echo.
