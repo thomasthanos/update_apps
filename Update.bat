@@ -6,7 +6,7 @@ reg add "HKEY_CURRENT_USER\Console" /v "FontWeight" /t REG_DWORD /d 0x00000990 /
 cls
 
 @echo off 
-color 2F  REM πράσινο φόντο και λευκό προσκήνιο
+color 3
 echo.
 echo.
 echo  ============       ///       ///
