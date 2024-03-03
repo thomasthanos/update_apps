@@ -21,7 +21,7 @@ echo.
 echo  Kanei Update oles tis efarmoges!
 echo  _________________________________
 echo.
-pause
+timeout /t 4 >nul
 
 @echo off
 winget upgrade
