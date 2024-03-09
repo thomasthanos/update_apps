@@ -61,14 +61,6 @@ cls
 echo.
 cls && echo( && echo     [94mDIAGRAFTIKE TO prefetch[90m ///// [33m%prefetchFilesDeleted% [31mfiles deleted from prefetch directory.[0m
 echo.
-REM Countdown for 10 seconds
-for /l %%i in (5,-1,1) do (
-    echo.
-    echo   Start another %%i seconds...
-    timeout /t 1 >nul
-)
-
-echo.
 cls
 echo.
 echo [36mCopyright(c) by Thomas[0m
