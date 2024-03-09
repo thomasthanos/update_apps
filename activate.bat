@@ -1,28 +1,30 @@
-echo off
-echo. 
+:: ==================================================
+::  Activate-Windows 10-11 / SEMI-AUTO
+:: ==================================================
+::  Dev  - Thomas
+::  Help - ChatGPT
+::  Link - https://github.com/thomasthanos/update_apps
+::
+::  changelog for v1.1: -----
+:: ==================================================
 
-echo ACTIVATE WINDOWS
-color a
+
+:: Title
+echo off
+cls && echo( && echo     [94mWindows[0m: [33mActivate[0m - [[31m11-10 SEMI-AUTO[0m]
+timeout /t 4 >nul
+:: 1st line
+cls && echo( && echo     [36m[+][0m : [33mFirst[0m [31mActivate[0m
 slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-timeout /t 2 >nul
-echo ACTIVATE WINDOWS
+:: 2st line
+cls && echo( && echo     [93m[+][0m : [33mSecond[0m [31mActivate[0m
 slmgr /skms kms9.MSGuides.com
-timeout /t 2 >nul
-echo ACTIVATE WINDOWS
+:: 3st line
+cls && echo( && echo     [32m[+][0m : [33mFinal[0m [31mActivate[0m
 slmgr /ato
-timeout /t 2 >nul
-echo F     FINISH
+pause
+
 echo.
-echo.
-echo.
-echo.
-echo  ============       ///       ///
-echo      ///            ///       ///  
-echo      ///            ///       /// 
-echo      ///            /// ///// ///
-echo      ///            ///       ///  
-echo      ///            ///       ///
-echo      ///            ///       ///
-echo.
-echo.
+cls
+echo (c) Thomas Bat file
 pause
