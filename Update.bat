@@ -1,31 +1,40 @@
-@echo off 
-color 3
-echo.
-echo.
-echo  ============       ///       ///
-echo      ///            ///       ///  
-echo      ///            ///       /// 
-echo      ///            /// ///// ///
-echo      ///            ///       ///  
-echo      ///            ///       ///
-echo      ///            ///       ///
-echo.
-echo.
-echo  Kanei Update oles tis efarmoges!
-echo  _________________________________
-echo.
-timeout /t 4 >nul
+:: ==================================================
+::  Update all apps
+:: ==================================================
+::  Dev  - Thomas
+::  Help - ChatGPT
+::  Link - https://github.com/thomasthanos/update_apps
+::
+::  changelog for v1.1: -----
+:: ==================================================
+
 
 @echo off
+echo.
+echo [35mKanei Update oles tis efarmoges![0m
+
+echo [90;2m_________________________________[0m
+echo.
+echo  [94;2m============       ///       ///[0m
+echo  [94;2m    ///            ///       ///[0m
+echo  [94;2m    ///            ///       ///[0m 
+echo  [94;2m    ///            /// ///// ///[0m
+echo  [94;2m    ///            ///       ///[0m  
+echo  [94;2m    ///            ///       ///[0m
+echo  [94;2m    ///            ///       ///[0m
+echo.
+echo [31;6mPress Enter.[0m
+pause >nul
+cls
+
 winget upgrade
-color 3
-pause
-color
+echo.
+echo [31;6mPress Enter.[0m
+pause >nul
 winget upgrade --all
-color
+
 echo.
-echo  _______________________
-echo  Copyright(c) by Thomas
+echo [36mCopyright(c) by Thomas[0m
 echo.
-echo.
-pause
+echo [35mPress Enter to exit...[0m
+pause >nul

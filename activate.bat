@@ -9,8 +9,14 @@
 :: ==================================================
 
 
+@echo off
+reg add "HKEY_CURRENT_USER\Console" /v "FaceName" /t REG_SZ /d "Cascadia Mono" /f
+reg add "HKEY_CURRENT_USER\Console" /v "FontFamily" /t REG_DWORD /d 0x00000036 /f
+reg add "HKEY_CURRENT_USER\Console" /v "FontSize" /t REG_DWORD /d 0x00140000 /f
+reg add "HKEY_CURRENT_USER\Console" /v "FontWeight" /t REG_DWORD /d 0x00000990 /f
+cls
+
 :: Title
-echo off
 cls && echo( && echo     [94mWindows[0m: [33mActivate[0m - [[31m11-10 SEMI-AUTO[0m]
 timeout /t 4 >nul
 :: 1st line
@@ -27,7 +33,7 @@ pause
 echo.
 cls
 echo.
-echo [36m(c) Thomas[0m
+echo [36mCopyright(c) by Thomas[0m
 echo.
 echo [35mPress Enter to exit...[0m
 pause >nul

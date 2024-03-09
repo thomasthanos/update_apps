@@ -1,30 +1,33 @@
-@echo off
-color 3
-echo.
-echo  Kanei Update oles tis efarmoges!
-echo  _________________________________
-echo.
-echo.
-echo  ============       ///       ///
-echo      ///            ///       ///  
-echo      ///            ///       /// 
-echo      ///            /// ///// ///
-echo      ///            ///       ///  
-echo      ///            ///       ///
-echo      ///            ///       ///
-echo.
-echo.
+:: ==================================================
+::  Private install apps
+:: ==================================================
+::  Dev  - Thomas
+::  Help - ChatGPT
+::  Link - https://github.com/thomasthanos/update_apps
+::
+::  changelog for v1.1: -----
+:: ==================================================
 
 @echo off
-reg add "HKEY_CURRENT_USER\Console" /v "FaceName" /t REG_SZ /d "Cascadia Mono" /f
-reg add "HKEY_CURRENT_USER\Console" /v "FontFamily" /t REG_DWORD /d 0x00000036 /f
-reg add "HKEY_CURRENT_USER\Console" /v "FontSize" /t REG_DWORD /d 0x00140000 /f
-reg add "HKEY_CURRENT_USER\Console" /v "FontWeight" /t REG_DWORD /d 0x00000990 /f
-cls
+echo.
+echo [35mKanei Install oles tis efarmoges![0m
+
+echo [90;2m_________________________________[0m
+echo.
+echo  [94;2m============       ///       ///[0m
+echo  [94;2m    ///            ///       ///[0m
+echo  [94;2m    ///            ///       ///[0m 
+echo  [94;2m    ///            /// ///// ///[0m
+echo  [94;2m    ///            ///       ///[0m  
+echo  [94;2m    ///            ///       ///[0m
+echo  [94;2m    ///            ///       ///[0m
+echo.
+echo [31;6mPress Enter.[0m
+pause >nul
+
+
 winget upgrade
 cls
-echo.
-echo  PATA ENTER
 echo.
 pause
 echo Installing Discord...
@@ -83,9 +86,9 @@ start /wait winget install -e --id WeMod.WeMod
 
 
 echo.
+cls
 echo.
-echo  _______________________
-echo  Installation complete.
-echo  Copyright(c) by Thomas
+echo [36mCopyright(c) by Thomas[0m
 echo.
-pause
+echo [35mPress Enter to exit...[0m
+pause >nul
