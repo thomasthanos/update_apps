@@ -21,10 +21,13 @@ cls && echo( && echo     [93m[+][0m : [33mSecond[0m [31mActivate[0m
 slmgr /skms kms9.MSGuides.com
 :: 3st line
 cls && echo( && echo     [32m[+][0m : [33mFinal[0m [31mActivate[0m
-slmgr /ato
+::slmgr /ato
 pause
 
 echo.
 cls
-echo (c) Thomas Bat file
-pause
+echo.
+echo [36m(c) Thomas[0m
+echo.
+echo [35mPress Enter to exit...[0m
+pause >nul
